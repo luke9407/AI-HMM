@@ -6,6 +6,7 @@ import numpy as np
 
 from model import HMMModel
 
+# train.csv is csv file in form of 'audio_file_id, audio_class'
 TRAIN_PATH = os.path.join(os.path.dirname(__file__), 'urban-sound-classification/train')
 TRAIN_INFO_FILE = os.path.join(TRAIN_PATH, 'train.csv')
 TRAIN_AUDIO_DIR = os.path.join(TRAIN_PATH, 'Train')
@@ -28,15 +29,18 @@ for idx, line in enumerate(train_info):
     if not os.path.isfile(audio_file_path):
         continue
 
-    y, sr = librosa.load(audio_file_path)
-    mfcc = librosa.feature.mfcc(y, sr=sr)
-    spectral_centroid = librosa.feature.spectral_centroid(y, sr=sr)[0]
-    spectral_rolloff = librosa.feature.spectral_rolloff(y, sr=sr)[0]
+    y, sr = librosa.load(audio_file_path)  # audio file load
+    mfcc = librosa.feature.mfcc(y, sr=sr)  # MFCC feature extraction
+    spectral_centroid = librosa.feature.spectral_centroid(y, sr=sr)[0]  # Spectral centroid extraction for comparison
+    spectral_rolloff = librosa.feature.spectral_rolloff(y, sr=sr)[0]  # Spectral rolloff extraction for comparison
     if first_shape is not None and mfcc.shape != first_shape:
+        # Each audio files have different mfcc shape so resize it
         mfcc = np.resize(mfcc, first_shape)
         spectral_centroid = np.resize(spectral_centroid, first_shape[1])
         spectral_rolloff = np.resize(spectral_rolloff, first_shape[1])
 
+    # For training, just use mfcc.
+    # I ran some tests with other features like spectral_centroid, but accuracy was worse.
     feature = mfcc
 
     if idx == 0:
@@ -47,6 +51,8 @@ for idx, line in enumerate(train_info):
         train_lengths[audio_class] = []
     else:
         train_data[audio_class] = np.concatenate([train_data[audio_class], feature])
+
+    # Model fitting in hmmlearn library, we need to give multiple sequences' length as input
     train_lengths[audio_class].append(len(feature))
 
     if idx % 100 == 0:
@@ -56,7 +62,7 @@ print 'Train start!'
 models = {}
 test_data = {}
 test_lengths = {}
-train_portion = 0.9
+train_portion = 0.9  # Use 90% of data as training and 10% as testing
 
 for audio_class in train_lengths:
     test_index = int(len(train_lengths[audio_class]) * train_portion)
@@ -65,6 +71,7 @@ for audio_class in train_lengths:
     test_lengths[audio_class] = train_lengths[audio_class][test_index:]
     test_data[audio_class] = train_data[audio_class][length_sum:]
 
+    # Make HMM model for each audio class
     models[audio_class] = HMMModel()
     models[audio_class].train(train_data[audio_class][:length_sum], train_lengths[audio_class][:test_index])
 
@@ -80,6 +87,7 @@ for real_class in test_data:
         for train_class in models:
             evaluated = models[train_class].evaluate(test_mfcc)
             scores[train_class] = evaluated
+        # Score the test audio file with each audio HMM class and sort by score
         sorted_score = sorted(scores.items(), key=lambda kv: kv[1], reverse=True)
         rank = 1
         for ss in sorted_score:
@@ -88,6 +96,7 @@ for real_class in test_data:
             rank += 1
         print 'Real class : {0}, Rank : {1}'.format(real_class, rank)
         accuracy[real_class]['total'] += 1
+        # If real class's rank is less than 3, consider it as right answer.
         if rank <= 3:
             accuracy[real_class]['correct'] += 1
         start += test_length
@@ -95,6 +104,7 @@ for real_class in test_data:
 total = 0
 correct = 0
 
+# Print summary
 for audio_class in accuracy:
     t = accuracy[audio_class]['total']
     c = accuracy[audio_class]['correct']

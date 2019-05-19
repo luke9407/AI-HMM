@@ -3,6 +3,8 @@ from hmmlearn import hmm
 
 class HMMModel:
     def __init__(self):
+        # Use GaussianHMM model.
+        # I changed n_components from 7 to 20 and at 10 accuracy was best.
         self.model = hmm.GaussianHMM(
             n_components=10,
             n_iter=1000
