@@ -16,13 +16,12 @@ train_info = csv.reader(f)
 next(train_info, None)
 
 train_data = {}
-first_shape = test_info = None
+train_lengths = {}
+first_shape = None
 
 print 'Extracting mfcc...'
 
 for idx, line in enumerate(train_info):
-    if idx == 500:
-        break
     audio_id, audio_class = line
 
     audio_file_path = os.path.join(TRAIN_AUDIO_DIR, str(audio_id) + '.wav')
@@ -31,16 +30,24 @@ for idx, line in enumerate(train_info):
 
     y, sr = librosa.load(audio_file_path)
     mfcc = librosa.feature.mfcc(y, sr=sr)
+    spectral_centroid = librosa.feature.spectral_centroid(y, sr=sr)[0]
+    spectral_rolloff = librosa.feature.spectral_rolloff(y, sr=sr)[0]
     if first_shape is not None and mfcc.shape != first_shape:
         mfcc = np.resize(mfcc, first_shape)
+        spectral_centroid = np.resize(spectral_centroid, first_shape[1])
+        spectral_rolloff = np.resize(spectral_rolloff, first_shape[1])
+
+    feature = mfcc
 
     if idx == 0:
         first_shape = mfcc.shape
 
     if audio_class not in train_data:
-        train_data[audio_class] = mfcc
+        train_data[audio_class] = feature
+        train_lengths[audio_class] = []
     else:
-        train_data[audio_class] = np.concatenate((train_data[audio_class], mfcc))
+        train_data[audio_class] = np.concatenate([train_data[audio_class], feature])
+    train_lengths[audio_class].append(len(feature))
 
     if idx % 100 == 0:
         print 'Line {0} finished!'.format(idx)
@@ -48,38 +55,42 @@ for idx, line in enumerate(train_info):
 print 'Train start!'
 models = {}
 test_data = {}
+test_lengths = {}
 train_portion = 0.9
 
-for audio_class in train_data:
-    portion = int(int(train_data[audio_class].shape[0] / first_shape[0]) * train_portion)
-    test_index = portion * first_shape[0]
-    test_data[audio_class] = train_data[audio_class][test_index:]
+for audio_class in train_lengths:
+    test_index = int(len(train_lengths[audio_class]) * train_portion)
+    length_sum = sum(train_lengths[audio_class][:test_index])
+
+    test_lengths[audio_class] = train_lengths[audio_class][test_index:]
+    test_data[audio_class] = train_data[audio_class][length_sum:]
 
     models[audio_class] = HMMModel()
-    models[audio_class].train(train_data[audio_class][:test_index])
+    models[audio_class].train(train_data[audio_class][:length_sum], train_lengths[audio_class][:test_index])
 
 accuracy = {}
 
 for real_class in test_data:
     accuracy[real_class] = {'total': 0, 'correct': 0}
     start = 0
-    while True:
-        test_mfcc = test_data[real_class][start:(start + first_shape[0])]
-        if test_mfcc.size == 0:
-            break
-        score = None
-        hmm_result = None
+
+    for test_length in test_lengths[audio_class]:
+        test_mfcc = test_data[real_class][start:(start + test_length)]
+        scores = {}
         for train_class in models:
             evaluated = models[train_class].evaluate(test_mfcc)
-            if score is None or score < evaluated:
-                score = evaluated
-                hmm_result = train_class
-        if hmm_result is not None:
-            print 'Real class : {0}, HMM result : {1}'.format(real_class, hmm_result)
+            scores[train_class] = evaluated
+        sorted_score = sorted(scores.items(), key=lambda kv: kv[1], reverse=True)
+        rank = 1
+        for ss in sorted_score:
+            if ss[0] == real_class:
+                break
+            rank += 1
+        print 'Real class : {0}, Rank : {1}'.format(real_class, rank)
         accuracy[real_class]['total'] += 1
-        if real_class == hmm_result:
+        if rank <= 3:
             accuracy[real_class]['correct'] += 1
-        start += first_shape[0]
+        start += test_length
 
 total = 0
 correct = 0

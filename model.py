@@ -11,8 +11,8 @@ class HMMModel:
     def shape(self):
         return [self.model.n_components, self.model.n_features]
 
-    def train(self, x):
-        self.model.fit(x)
+    def train(self, x, lengths):
+        self.model.fit(x, lengths)
 
-    def evaluate(self, x):
-        return self.model.score(x)
+    def evaluate(self, x, lengths=None):
+        return self.model.score(x, lengths)
