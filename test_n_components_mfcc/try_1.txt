@@ -1,0 +1,208 @@
+Train start! n_component : 5
+Class : siren, Total test : 11, Correct : 3, Accuracy : 27.2727272727, In rank 3 : 7, In rank 3 accuracy : 63.6363636364
+Class : air_conditioner, Total test : 10, Correct : 5, Accuracy : 50.0, In rank 3 : 8, In rank 3 accuracy : 80.0
+Class : children_playing, Total test : 12, Correct : 0, Accuracy : 0.0, In rank 3 : 3, In rank 3 accuracy : 25.0
+Class : car_horn, Total test : 6, Correct : 0, Accuracy : 0.0, In rank 3 : 4, In rank 3 accuracy : 66.6666666667
+Class : street_music, Total test : 13, Correct : 4, Accuracy : 30.7692307692, In rank 3 : 11, In rank 3 accuracy : 84.6153846154
+Class : dog_bark, Total test : 12, Correct : 3, Accuracy : 25.0, In rank 3 : 10, In rank 3 accuracy : 83.3333333333
+Class : drilling, Total test : 12, Correct : 5, Accuracy : 41.6666666667, In rank 3 : 11, In rank 3 accuracy : 91.6666666667
+Class : engine_idling, Total test : 11, Correct : 3, Accuracy : 27.2727272727, In rank 3 : 8, In rank 3 accuracy : 72.7272727273
+Class : jackhammer, Total test : 13, Correct : 7, Accuracy : 53.8461538462, In rank 3 : 8, In rank 3 accuracy : 61.5384615385
+Class : gun_shot, Total test : 5, Correct : 3, Accuracy : 60.0, In rank 3 : 4, In rank 3 accuracy : 80.0
+====================================================================
+Total : 105, Correct : 33, Accuracy : 31.4285714286, In rank 3 : 74, In rank 3 accuracy : 70.4761904762
+Train start! n_component : 6
+Class : siren, Total test : 11, Correct : 3, Accuracy : 27.2727272727, In rank 3 : 8, In rank 3 accuracy : 72.7272727273
+Class : air_conditioner, Total test : 10, Correct : 7, Accuracy : 70.0, In rank 3 : 10, In rank 3 accuracy : 100.0
+Class : children_playing, Total test : 12, Correct : 1, Accuracy : 8.33333333333, In rank 3 : 7, In rank 3 accuracy : 58.3333333333
+Class : car_horn, Total test : 6, Correct : 1, Accuracy : 16.6666666667, In rank 3 : 3, In rank 3 accuracy : 50.0
+Class : street_music, Total test : 13, Correct : 7, Accuracy : 53.8461538462, In rank 3 : 13, In rank 3 accuracy : 100.0
+Class : dog_bark, Total test : 12, Correct : 7, Accuracy : 58.3333333333, In rank 3 : 8, In rank 3 accuracy : 66.6666666667
+Class : drilling, Total test : 12, Correct : 4, Accuracy : 33.3333333333, In rank 3 : 9, In rank 3 accuracy : 75.0
+Class : engine_idling, Total test : 11, Correct : 5, Accuracy : 45.4545454545, In rank 3 : 8, In rank 3 accuracy : 72.7272727273
+Class : jackhammer, Total test : 13, Correct : 5, Accuracy : 38.4615384615, In rank 3 : 8, In rank 3 accuracy : 61.5384615385
+Class : gun_shot, Total test : 5, Correct : 2, Accuracy : 40.0, In rank 3 : 5, In rank 3 accuracy : 100.0
+====================================================================
+Total : 105, Correct : 42, Accuracy : 40.0, In rank 3 : 79, In rank 3 accuracy : 75.2380952381
+Train start! n_component : 7
+Class : siren, Total test : 11, Correct : 3, Accuracy : 27.2727272727, In rank 3 : 6, In rank 3 accuracy : 54.5454545455
+Class : air_conditioner, Total test : 10, Correct : 7, Accuracy : 70.0, In rank 3 : 10, In rank 3 accuracy : 100.0
+Class : children_playing, Total test : 12, Correct : 0, Accuracy : 0.0, In rank 3 : 0, In rank 3 accuracy : 0.0
+Class : car_horn, Total test : 6, Correct : 1, Accuracy : 16.6666666667, In rank 3 : 3, In rank 3 accuracy : 50.0
+Class : street_music, Total test : 13, Correct : 8, Accuracy : 61.5384615385, In rank 3 : 11, In rank 3 accuracy : 84.6153846154
+Class : dog_bark, Total test : 12, Correct : 5, Accuracy : 41.6666666667, In rank 3 : 12, In rank 3 accuracy : 100.0
+Class : drilling, Total test : 12, Correct : 1, Accuracy : 8.33333333333, In rank 3 : 5, In rank 3 accuracy : 41.6666666667
+Class : engine_idling, Total test : 11, Correct : 5, Accuracy : 45.4545454545, In rank 3 : 11, In rank 3 accuracy : 100.0
+Class : jackhammer, Total test : 13, Correct : 2, Accuracy : 15.3846153846, In rank 3 : 9, In rank 3 accuracy : 69.2307692308
+Class : gun_shot, Total test : 5, Correct : 1, Accuracy : 20.0, In rank 3 : 5, In rank 3 accuracy : 100.0
+====================================================================
+Total : 105, Correct : 33, Accuracy : 31.4285714286, In rank 3 : 72, In rank 3 accuracy : 68.5714285714
+Train start! n_component : 8
+Class : siren, Total test : 11, Correct : 3, Accuracy : 27.2727272727, In rank 3 : 6, In rank 3 accuracy : 54.5454545455
+Class : air_conditioner, Total test : 10, Correct : 6, Accuracy : 60.0, In rank 3 : 10, In rank 3 accuracy : 100.0
+Class : children_playing, Total test : 12, Correct : 1, Accuracy : 8.33333333333, In rank 3 : 8, In rank 3 accuracy : 66.6666666667
+Class : car_horn, Total test : 6, Correct : 1, Accuracy : 16.6666666667, In rank 3 : 3, In rank 3 accuracy : 50.0
+Class : street_music, Total test : 13, Correct : 7, Accuracy : 53.8461538462, In rank 3 : 11, In rank 3 accuracy : 84.6153846154
+Class : dog_bark, Total test : 12, Correct : 6, Accuracy : 50.0, In rank 3 : 11, In rank 3 accuracy : 91.6666666667
+Class : drilling, Total test : 12, Correct : 3, Accuracy : 25.0, In rank 3 : 11, In rank 3 accuracy : 91.6666666667
+Class : engine_idling, Total test : 11, Correct : 5, Accuracy : 45.4545454545, In rank 3 : 9, In rank 3 accuracy : 81.8181818182
+Class : jackhammer, Total test : 13, Correct : 2, Accuracy : 15.3846153846, In rank 3 : 3, In rank 3 accuracy : 23.0769230769
+Class : gun_shot, Total test : 5, Correct : 1, Accuracy : 20.0, In rank 3 : 5, In rank 3 accuracy : 100.0
+====================================================================
+Total : 105, Correct : 35, Accuracy : 33.3333333333, In rank 3 : 77, In rank 3 accuracy : 73.3333333333
+Train start! n_component : 9
+Class : siren, Total test : 11, Correct : 3, Accuracy : 27.2727272727, In rank 3 : 5, In rank 3 accuracy : 45.4545454545
+Class : air_conditioner, Total test : 10, Correct : 4, Accuracy : 40.0, In rank 3 : 9, In rank 3 accuracy : 90.0
+Class : children_playing, Total test : 12, Correct : 1, Accuracy : 8.33333333333, In rank 3 : 7, In rank 3 accuracy : 58.3333333333
+Class : car_horn, Total test : 6, Correct : 1, Accuracy : 16.6666666667, In rank 3 : 2, In rank 3 accuracy : 33.3333333333
+Class : street_music, Total test : 13, Correct : 8, Accuracy : 61.5384615385, In rank 3 : 11, In rank 3 accuracy : 84.6153846154
+Class : dog_bark, Total test : 12, Correct : 6, Accuracy : 50.0, In rank 3 : 11, In rank 3 accuracy : 91.6666666667
+Class : drilling, Total test : 12, Correct : 3, Accuracy : 25.0, In rank 3 : 10, In rank 3 accuracy : 83.3333333333
+Class : engine_idling, Total test : 11, Correct : 6, Accuracy : 54.5454545455, In rank 3 : 11, In rank 3 accuracy : 100.0
+Class : jackhammer, Total test : 13, Correct : 6, Accuracy : 46.1538461538, In rank 3 : 11, In rank 3 accuracy : 84.6153846154
+Class : gun_shot, Total test : 5, Correct : 2, Accuracy : 40.0, In rank 3 : 4, In rank 3 accuracy : 80.0
+====================================================================
+Total : 105, Correct : 40, Accuracy : 38.0952380952, In rank 3 : 81, In rank 3 accuracy : 77.1428571429
+Train start! n_component : 10
+Class : siren, Total test : 11, Correct : 5, Accuracy : 45.4545454545, In rank 3 : 6, In rank 3 accuracy : 54.5454545455
+Class : air_conditioner, Total test : 10, Correct : 5, Accuracy : 50.0, In rank 3 : 8, In rank 3 accuracy : 80.0
+Class : children_playing, Total test : 12, Correct : 1, Accuracy : 8.33333333333, In rank 3 : 6, In rank 3 accuracy : 50.0
+Class : car_horn, Total test : 6, Correct : 1, Accuracy : 16.6666666667, In rank 3 : 1, In rank 3 accuracy : 16.6666666667
+Class : street_music, Total test : 13, Correct : 5, Accuracy : 38.4615384615, In rank 3 : 10, In rank 3 accuracy : 76.9230769231
+Class : dog_bark, Total test : 12, Correct : 6, Accuracy : 50.0, In rank 3 : 11, In rank 3 accuracy : 91.6666666667
+Class : drilling, Total test : 12, Correct : 4, Accuracy : 33.3333333333, In rank 3 : 8, In rank 3 accuracy : 66.6666666667
+Class : engine_idling, Total test : 11, Correct : 4, Accuracy : 36.3636363636, In rank 3 : 11, In rank 3 accuracy : 100.0
+Class : jackhammer, Total test : 13, Correct : 4, Accuracy : 30.7692307692, In rank 3 : 11, In rank 3 accuracy : 84.6153846154
+Class : gun_shot, Total test : 5, Correct : 2, Accuracy : 40.0, In rank 3 : 5, In rank 3 accuracy : 100.0
+====================================================================
+Total : 105, Correct : 37, Accuracy : 35.2380952381, In rank 3 : 77, In rank 3 accuracy : 73.3333333333
+Train start! n_component : 11
+Class : siren, Total test : 11, Correct : 5, Accuracy : 45.4545454545, In rank 3 : 5, In rank 3 accuracy : 45.4545454545
+Class : air_conditioner, Total test : 10, Correct : 5, Accuracy : 50.0, In rank 3 : 8, In rank 3 accuracy : 80.0
+Class : children_playing, Total test : 12, Correct : 2, Accuracy : 16.6666666667, In rank 3 : 7, In rank 3 accuracy : 58.3333333333
+Class : car_horn, Total test : 6, Correct : 1, Accuracy : 16.6666666667, In rank 3 : 2, In rank 3 accuracy : 33.3333333333
+Class : street_music, Total test : 13, Correct : 6, Accuracy : 46.1538461538, In rank 3 : 12, In rank 3 accuracy : 92.3076923077
+Class : dog_bark, Total test : 12, Correct : 8, Accuracy : 66.6666666667, In rank 3 : 12, In rank 3 accuracy : 100.0
+Class : drilling, Total test : 12, Correct : 2, Accuracy : 16.6666666667, In rank 3 : 7, In rank 3 accuracy : 58.3333333333
+Class : engine_idling, Total test : 11, Correct : 5, Accuracy : 45.4545454545, In rank 3 : 11, In rank 3 accuracy : 100.0
+Class : jackhammer, Total test : 13, Correct : 1, Accuracy : 7.69230769231, In rank 3 : 11, In rank 3 accuracy : 84.6153846154
+Class : gun_shot, Total test : 5, Correct : 4, Accuracy : 80.0, In rank 3 : 5, In rank 3 accuracy : 100.0
+====================================================================
+Total : 105, Correct : 39, Accuracy : 37.1428571429, In rank 3 : 80, In rank 3 accuracy : 76.1904761905
+Train start! n_component : 12
+Class : siren, Total test : 11, Correct : 5, Accuracy : 45.4545454545, In rank 3 : 7, In rank 3 accuracy : 63.6363636364
+Class : air_conditioner, Total test : 10, Correct : 5, Accuracy : 50.0, In rank 3 : 9, In rank 3 accuracy : 90.0
+Class : children_playing, Total test : 12, Correct : 1, Accuracy : 8.33333333333, In rank 3 : 5, In rank 3 accuracy : 41.6666666667
+Class : car_horn, Total test : 6, Correct : 1, Accuracy : 16.6666666667, In rank 3 : 1, In rank 3 accuracy : 16.6666666667
+Class : street_music, Total test : 13, Correct : 7, Accuracy : 53.8461538462, In rank 3 : 12, In rank 3 accuracy : 92.3076923077
+Class : dog_bark, Total test : 12, Correct : 8, Accuracy : 66.6666666667, In rank 3 : 11, In rank 3 accuracy : 91.6666666667
+Class : drilling, Total test : 12, Correct : 1, Accuracy : 8.33333333333, In rank 3 : 6, In rank 3 accuracy : 50.0
+Class : engine_idling, Total test : 11, Correct : 4, Accuracy : 36.3636363636, In rank 3 : 10, In rank 3 accuracy : 90.9090909091
+Class : jackhammer, Total test : 13, Correct : 4, Accuracy : 30.7692307692, In rank 3 : 11, In rank 3 accuracy : 84.6153846154
+Class : gun_shot, Total test : 5, Correct : 3, Accuracy : 60.0, In rank 3 : 5, In rank 3 accuracy : 100.0
+====================================================================
+Total : 105, Correct : 39, Accuracy : 37.1428571429, In rank 3 : 77, In rank 3 accuracy : 73.3333333333
+Train start! n_component : 13
+Class : siren, Total test : 11, Correct : 5, Accuracy : 45.4545454545, In rank 3 : 8, In rank 3 accuracy : 72.7272727273
+Class : air_conditioner, Total test : 10, Correct : 6, Accuracy : 60.0, In rank 3 : 9, In rank 3 accuracy : 90.0
+Class : children_playing, Total test : 12, Correct : 1, Accuracy : 8.33333333333, In rank 3 : 7, In rank 3 accuracy : 58.3333333333
+Class : car_horn, Total test : 6, Correct : 1, Accuracy : 16.6666666667, In rank 3 : 2, In rank 3 accuracy : 33.3333333333
+Class : street_music, Total test : 13, Correct : 7, Accuracy : 53.8461538462, In rank 3 : 11, In rank 3 accuracy : 84.6153846154
+Class : dog_bark, Total test : 12, Correct : 9, Accuracy : 75.0, In rank 3 : 11, In rank 3 accuracy : 91.6666666667
+Class : drilling, Total test : 12, Correct : 2, Accuracy : 16.6666666667, In rank 3 : 7, In rank 3 accuracy : 58.3333333333
+Class : engine_idling, Total test : 11, Correct : 3, Accuracy : 27.2727272727, In rank 3 : 9, In rank 3 accuracy : 81.8181818182
+Class : jackhammer, Total test : 13, Correct : 7, Accuracy : 53.8461538462, In rank 3 : 12, In rank 3 accuracy : 92.3076923077
+Class : gun_shot, Total test : 5, Correct : 1, Accuracy : 20.0, In rank 3 : 4, In rank 3 accuracy : 80.0
+====================================================================
+Total : 105, Correct : 42, Accuracy : 40.0, In rank 3 : 80, In rank 3 accuracy : 76.1904761905
+Train start! n_component : 14
+Class : siren, Total test : 11, Correct : 7, Accuracy : 63.6363636364, In rank 3 : 9, In rank 3 accuracy : 81.8181818182
+Class : air_conditioner, Total test : 10, Correct : 6, Accuracy : 60.0, In rank 3 : 9, In rank 3 accuracy : 90.0
+Class : children_playing, Total test : 12, Correct : 3, Accuracy : 25.0, In rank 3 : 5, In rank 3 accuracy : 41.6666666667
+Class : car_horn, Total test : 6, Correct : 1, Accuracy : 16.6666666667, In rank 3 : 2, In rank 3 accuracy : 33.3333333333
+Class : street_music, Total test : 13, Correct : 6, Accuracy : 46.1538461538, In rank 3 : 11, In rank 3 accuracy : 84.6153846154
+Class : dog_bark, Total test : 12, Correct : 8, Accuracy : 66.6666666667, In rank 3 : 10, In rank 3 accuracy : 83.3333333333
+Class : drilling, Total test : 12, Correct : 1, Accuracy : 8.33333333333, In rank 3 : 9, In rank 3 accuracy : 75.0
+Class : engine_idling, Total test : 11, Correct : 3, Accuracy : 27.2727272727, In rank 3 : 10, In rank 3 accuracy : 90.9090909091
+Class : jackhammer, Total test : 13, Correct : 6, Accuracy : 46.1538461538, In rank 3 : 11, In rank 3 accuracy : 84.6153846154
+Class : gun_shot, Total test : 5, Correct : 3, Accuracy : 60.0, In rank 3 : 4, In rank 3 accuracy : 80.0
+====================================================================
+Total : 105, Correct : 44, Accuracy : 41.9047619048, In rank 3 : 80, In rank 3 accuracy : 76.1904761905
+Train start! n_component : 15
+Class : siren, Total test : 11, Correct : 7, Accuracy : 63.6363636364, In rank 3 : 8, In rank 3 accuracy : 72.7272727273
+Class : air_conditioner, Total test : 10, Correct : 8, Accuracy : 80.0, In rank 3 : 9, In rank 3 accuracy : 90.0
+Class : children_playing, Total test : 12, Correct : 2, Accuracy : 16.6666666667, In rank 3 : 6, In rank 3 accuracy : 50.0
+Class : car_horn, Total test : 6, Correct : 0, Accuracy : 0.0, In rank 3 : 1, In rank 3 accuracy : 16.6666666667
+Class : street_music, Total test : 13, Correct : 6, Accuracy : 46.1538461538, In rank 3 : 10, In rank 3 accuracy : 76.9230769231
+Class : dog_bark, Total test : 12, Correct : 9, Accuracy : 75.0, In rank 3 : 12, In rank 3 accuracy : 100.0
+Class : drilling, Total test : 12, Correct : 7, Accuracy : 58.3333333333, In rank 3 : 11, In rank 3 accuracy : 91.6666666667
+Class : engine_idling, Total test : 11, Correct : 3, Accuracy : 27.2727272727, In rank 3 : 8, In rank 3 accuracy : 72.7272727273
+Class : jackhammer, Total test : 13, Correct : 2, Accuracy : 15.3846153846, In rank 3 : 8, In rank 3 accuracy : 61.5384615385
+Class : gun_shot, Total test : 5, Correct : 2, Accuracy : 40.0, In rank 3 : 4, In rank 3 accuracy : 80.0
+====================================================================
+Total : 105, Correct : 46, Accuracy : 43.8095238095, In rank 3 : 77, In rank 3 accuracy : 73.3333333333
+Train start! n_component : 16
+Class : siren, Total test : 11, Correct : 6, Accuracy : 54.5454545455, In rank 3 : 8, In rank 3 accuracy : 72.7272727273
+Class : air_conditioner, Total test : 10, Correct : 7, Accuracy : 70.0, In rank 3 : 9, In rank 3 accuracy : 90.0
+Class : children_playing, Total test : 12, Correct : 1, Accuracy : 8.33333333333, In rank 3 : 6, In rank 3 accuracy : 50.0
+Class : car_horn, Total test : 6, Correct : 1, Accuracy : 16.6666666667, In rank 3 : 1, In rank 3 accuracy : 16.6666666667
+Class : street_music, Total test : 13, Correct : 5, Accuracy : 38.4615384615, In rank 3 : 10, In rank 3 accuracy : 76.9230769231
+Class : dog_bark, Total test : 12, Correct : 9, Accuracy : 75.0, In rank 3 : 11, In rank 3 accuracy : 91.6666666667
+Class : drilling, Total test : 12, Correct : 3, Accuracy : 25.0, In rank 3 : 7, In rank 3 accuracy : 58.3333333333
+Class : engine_idling, Total test : 11, Correct : 3, Accuracy : 27.2727272727, In rank 3 : 9, In rank 3 accuracy : 81.8181818182
+Class : jackhammer, Total test : 13, Correct : 6, Accuracy : 46.1538461538, In rank 3 : 10, In rank 3 accuracy : 76.9230769231
+Class : gun_shot, Total test : 5, Correct : 3, Accuracy : 60.0, In rank 3 : 5, In rank 3 accuracy : 100.0
+====================================================================
+Total : 105, Correct : 44, Accuracy : 41.9047619048, In rank 3 : 76, In rank 3 accuracy : 72.380952381
+Train start! n_component : 17
+Class : siren, Total test : 11, Correct : 7, Accuracy : 63.6363636364, In rank 3 : 10, In rank 3 accuracy : 90.9090909091
+Class : air_conditioner, Total test : 10, Correct : 6, Accuracy : 60.0, In rank 3 : 9, In rank 3 accuracy : 90.0
+Class : children_playing, Total test : 12, Correct : 0, Accuracy : 0.0, In rank 3 : 6, In rank 3 accuracy : 50.0
+Class : car_horn, Total test : 6, Correct : 0, Accuracy : 0.0, In rank 3 : 1, In rank 3 accuracy : 16.6666666667
+Class : street_music, Total test : 13, Correct : 5, Accuracy : 38.4615384615, In rank 3 : 11, In rank 3 accuracy : 84.6153846154
+Class : dog_bark, Total test : 12, Correct : 9, Accuracy : 75.0, In rank 3 : 11, In rank 3 accuracy : 91.6666666667
+Class : drilling, Total test : 12, Correct : 1, Accuracy : 8.33333333333, In rank 3 : 8, In rank 3 accuracy : 66.6666666667
+Class : engine_idling, Total test : 11, Correct : 3, Accuracy : 27.2727272727, In rank 3 : 11, In rank 3 accuracy : 100.0
+Class : jackhammer, Total test : 13, Correct : 6, Accuracy : 46.1538461538, In rank 3 : 11, In rank 3 accuracy : 84.6153846154
+Class : gun_shot, Total test : 5, Correct : 2, Accuracy : 40.0, In rank 3 : 5, In rank 3 accuracy : 100.0
+====================================================================
+Total : 105, Correct : 39, Accuracy : 37.1428571429, In rank 3 : 83, In rank 3 accuracy : 79.0476190476
+Train start! n_component : 18
+Class : siren, Total test : 11, Correct : 8, Accuracy : 72.7272727273, In rank 3 : 10, In rank 3 accuracy : 90.9090909091
+Class : air_conditioner, Total test : 10, Correct : 8, Accuracy : 80.0, In rank 3 : 9, In rank 3 accuracy : 90.0
+Class : children_playing, Total test : 12, Correct : 3, Accuracy : 25.0, In rank 3 : 7, In rank 3 accuracy : 58.3333333333
+Class : car_horn, Total test : 6, Correct : 0, Accuracy : 0.0, In rank 3 : 2, In rank 3 accuracy : 33.3333333333
+Class : street_music, Total test : 13, Correct : 6, Accuracy : 46.1538461538, In rank 3 : 10, In rank 3 accuracy : 76.9230769231
+Class : dog_bark, Total test : 12, Correct : 10, Accuracy : 83.3333333333, In rank 3 : 11, In rank 3 accuracy : 91.6666666667
+Class : drilling, Total test : 12, Correct : 4, Accuracy : 33.3333333333, In rank 3 : 10, In rank 3 accuracy : 83.3333333333
+Class : engine_idling, Total test : 11, Correct : 3, Accuracy : 27.2727272727, In rank 3 : 10, In rank 3 accuracy : 90.9090909091
+Class : jackhammer, Total test : 13, Correct : 4, Accuracy : 30.7692307692, In rank 3 : 9, In rank 3 accuracy : 69.2307692308
+Class : gun_shot, Total test : 5, Correct : 3, Accuracy : 60.0, In rank 3 : 5, In rank 3 accuracy : 100.0
+====================================================================
+Total : 105, Correct : 49, Accuracy : 46.6666666667, In rank 3 : 83, In rank 3 accuracy : 79.0476190476
+Train start! n_component : 19
+Class : siren, Total test : 11, Correct : 7, Accuracy : 63.6363636364, In rank 3 : 9, In rank 3 accuracy : 81.8181818182
+Class : air_conditioner, Total test : 10, Correct : 7, Accuracy : 70.0, In rank 3 : 9, In rank 3 accuracy : 90.0
+Class : children_playing, Total test : 12, Correct : 1, Accuracy : 8.33333333333, In rank 3 : 7, In rank 3 accuracy : 58.3333333333
+Class : car_horn, Total test : 6, Correct : 1, Accuracy : 16.6666666667, In rank 3 : 1, In rank 3 accuracy : 16.6666666667
+Class : street_music, Total test : 13, Correct : 5, Accuracy : 38.4615384615, In rank 3 : 10, In rank 3 accuracy : 76.9230769231
+Class : dog_bark, Total test : 12, Correct : 10, Accuracy : 83.3333333333, In rank 3 : 12, In rank 3 accuracy : 100.0
+Class : drilling, Total test : 12, Correct : 2, Accuracy : 16.6666666667, In rank 3 : 6, In rank 3 accuracy : 50.0
+Class : engine_idling, Total test : 11, Correct : 4, Accuracy : 36.3636363636, In rank 3 : 11, In rank 3 accuracy : 100.0
+Class : jackhammer, Total test : 13, Correct : 2, Accuracy : 15.3846153846, In rank 3 : 10, In rank 3 accuracy : 76.9230769231
+Class : gun_shot, Total test : 5, Correct : 2, Accuracy : 40.0, In rank 3 : 5, In rank 3 accuracy : 100.0
+====================================================================
+Total : 105, Correct : 41, Accuracy : 39.0476190476, In rank 3 : 80, In rank 3 accuracy : 76.1904761905
+Train start! n_component : 20
+Class : siren, Total test : 11, Correct : 2, Accuracy : 18.1818181818, In rank 3 : 10, In rank 3 accuracy : 90.9090909091
+Class : air_conditioner, Total test : 10, Correct : 7, Accuracy : 70.0, In rank 3 : 9, In rank 3 accuracy : 90.0
+Class : children_playing, Total test : 12, Correct : 1, Accuracy : 8.33333333333, In rank 3 : 5, In rank 3 accuracy : 41.6666666667
+Class : car_horn, Total test : 6, Correct : 1, Accuracy : 16.6666666667, In rank 3 : 1, In rank 3 accuracy : 16.6666666667
+Class : street_music, Total test : 13, Correct : 9, Accuracy : 69.2307692308, In rank 3 : 11, In rank 3 accuracy : 84.6153846154
+Class : dog_bark, Total test : 12, Correct : 7, Accuracy : 58.3333333333, In rank 3 : 11, In rank 3 accuracy : 91.6666666667
+Class : drilling, Total test : 12, Correct : 2, Accuracy : 16.6666666667, In rank 3 : 7, In rank 3 accuracy : 58.3333333333
+Class : engine_idling, Total test : 11, Correct : 5, Accuracy : 45.4545454545, In rank 3 : 11, In rank 3 accuracy : 100.0
+Class : jackhammer, Total test : 13, Correct : 4, Accuracy : 30.7692307692, In rank 3 : 11, In rank 3 accuracy : 84.6153846154
+Class : gun_shot, Total test : 5, Correct : 0, Accuracy : 0.0, In rank 3 : 4, In rank 3 accuracy : 80.0
+====================================================================
+Total : 105, Correct : 38, Accuracy : 36.1904761905, In rank 3 : 80, In rank 3 accuracy : 76.1904761905

@@ -1,0 +1,13 @@
+Train start! n_component : 14
+Class : siren, Total test : 61, Correct : 20, Accuracy : 32.7868852459, In rank 3 : 45, In rank 3 accuracy : 73.7704918033
+Class : air_conditioner, Total test : 60, Correct : 9, Accuracy : 15.0, In rank 3 : 37, In rank 3 accuracy : 61.6666666667
+Class : children_playing, Total test : 60, Correct : 6, Accuracy : 10.0, In rank 3 : 43, In rank 3 accuracy : 71.6666666667
+Class : car_horn, Total test : 31, Correct : 5, Accuracy : 16.1290322581, In rank 3 : 11, In rank 3 accuracy : 35.4838709677
+Class : street_music, Total test : 60, Correct : 40, Accuracy : 66.6666666667, In rank 3 : 57, In rank 3 accuracy : 95.0
+Class : dog_bark, Total test : 60, Correct : 34, Accuracy : 56.6666666667, In rank 3 : 49, In rank 3 accuracy : 81.6666666667
+Class : drilling, Total test : 60, Correct : 12, Accuracy : 20.0, In rank 3 : 44, In rank 3 accuracy : 73.3333333333
+Class : engine_idling, Total test : 63, Correct : 39, Accuracy : 61.9047619048, In rank 3 : 56, In rank 3 accuracy : 88.8888888889
+Class : jackhammer, Total test : 67, Correct : 38, Accuracy : 56.7164179104, In rank 3 : 57, In rank 3 accuracy : 85.0746268657
+Class : gun_shot, Total test : 23, Correct : 16, Accuracy : 69.5652173913, In rank 3 : 20, In rank 3 accuracy : 86.9565217391
+====================================================================
+Total : 545, Correct : 219, Accuracy : 40.1834862385, In rank 3 : 419, In rank 3 accuracy : 76.880733945

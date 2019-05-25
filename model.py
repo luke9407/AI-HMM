@@ -2,11 +2,11 @@ from hmmlearn import hmm
 
 
 class HMMModel:
-    def __init__(self):
+    def __init__(self, n_components):
         # Use GaussianHMM model.
         # I changed n_components from 7 to 20 and at 10 accuracy was best.
         self.model = hmm.GaussianHMM(
-            n_components=10,
+            n_components=n_components,
             n_iter=1000
         )
 
