@@ -23,6 +23,8 @@ first_shape = None
 print 'Extracting mfcc...'
 
 for idx, line in enumerate(train_info):
+    if idx == 500:
+        break
     audio_id, audio_class = line
 
     audio_file_path = os.path.join(TRAIN_AUDIO_DIR, str(audio_id) + '.wav')
@@ -42,6 +44,7 @@ for idx, line in enumerate(train_info):
     # For training, just use mfcc.
     # I ran some tests with other features like spectral_centroid, but accuracy was worse.
     feature = mfcc
+    # feature = np.concatenate((mfcc, [spectral_centroid]))
 
     if idx == 0:
         first_shape = mfcc.shape
@@ -81,7 +84,7 @@ for real_class in test_data:
     accuracy[real_class] = {'total': 0, 'correct': 0}
     start = 0
 
-    for test_length in test_lengths[audio_class]:
+    for test_length in test_lengths[real_class]:
         test_mfcc = test_data[real_class][start:(start + test_length)]
         scores = {}
         for train_class in models:
@@ -90,8 +93,8 @@ for real_class in test_data:
         # Score the test audio file with each audio HMM class and sort by score
         sorted_score = sorted(scores.items(), key=lambda kv: kv[1], reverse=True)
         rank = 1
-        for ss in sorted_score:
-            if ss[0] == real_class:
+        for sorted_info in sorted_score:
+            if sorted_info[0] == real_class:
                 break
             rank += 1
         print 'Real class : {0}, Rank : {1}'.format(real_class, rank)
